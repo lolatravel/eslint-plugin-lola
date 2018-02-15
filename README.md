@@ -36,15 +36,24 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "lola/rule-name": 2
+        "lola/no-arrow-class-properties": 2
     }
+}
+```
+
+or use the statndard lola configuration
+
+```json
+{
+    "extends": [
+        "plugin:lola/standard"
+    ]
 }
 ```
 
 ## Supported Rules
 
-* Fill in provided rules here
-
+`no-arrow-class-properties` - Don't allow arrow functions on classes
 
 
 
