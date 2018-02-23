@@ -38,7 +38,7 @@ ruleTester.run("no-arrow-class-properties", rule, {
                 method = () => 'bad';
             }`,
             errors: [{
-                message: 'Arrow functions are not allowed as class properties: \'method\' in \'Bad\'',
+                message: "Unexpected arrow function 'method' on class 'Bad'",
                 type: 'ClassProperty'
             }]
         }
