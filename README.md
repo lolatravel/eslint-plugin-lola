@@ -53,7 +53,8 @@ or use the statndard lola configuration
 
 ## Supported Rules
 
-`no-arrow-class-properties` - Don't allow arrow functions on classes
+[`no-arrow-class-properties`](docs/rules/no-arrow-class-properties.md) - Don't allow arrow functions on classes
+[`no-nested-ternary`](docs/rules/no-nested-ternary.md) - eslint core `no-nested-ternary` rule with an option to allow chaining
 
 
 
