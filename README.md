@@ -53,9 +53,10 @@ or use the statndard lola configuration
 
 ## Supported Rules
 
-[`no-arrow-class-properties`](docs/rules/no-arrow-class-properties.md) - Don't allow arrow functions on classes
-[`no-nested-ternary`](docs/rules/no-nested-ternary.md) - eslint core `no-nested-ternary` rule with an option to allow chaining
+[`no-arrow-class-properties`](docs/rules/no-arrow-class-properties.md) - Don't allow arrow functions on classes<br>
+[`no-default-export`](docs/rules/no-default-export.md) - Don't allow `export default` statements<br>
+[`required-exports`](docs/rules/required-exports.md) - Require certain names to be exported, configurable by file/path<br>
+[`no-nested-ternary`](docs/rules/no-nested-ternary.md) - eslint core `no-nested-ternary` rule with an option to allow chaining<br>
 
-
-
-
+### Deprecated
+[`limit-nested-ternaries`](docs/rules/limit-nested-ternaries.md) - Limit depth of ternary nesting
