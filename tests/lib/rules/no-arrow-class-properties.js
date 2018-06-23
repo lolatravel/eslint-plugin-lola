@@ -28,6 +28,30 @@ ruleTester.run("no-arrow-class-properties", rule, {
                     return 'good';
                 }
             }`
+        },
+        {
+            code: `
+            class Good { 
+                static method = () => {
+                    return 'good';
+                }
+            }`
+        },
+        {
+            code: `
+            const Good = class { 
+                method() {
+                    return 'good';
+                }
+            }`
+        },
+        {
+            code: `
+            const Good = class { 
+                static method = () => {
+                    return 'good';
+                }
+            }`
         }
     ],
 
@@ -39,6 +63,16 @@ ruleTester.run("no-arrow-class-properties", rule, {
             }`,
             errors: [{
                 message: "Unexpected arrow function 'method' on class 'Bad'",
+                type: 'ClassProperty'
+            }]
+        },
+        {
+            code: `
+            const Bad = class { 
+                method = () => 'bad';
+            }`,
+            errors: [{
+                message: "Unexpected arrow function 'method' on class '(anonymous class)'",
                 type: 'ClassProperty'
             }]
         }
